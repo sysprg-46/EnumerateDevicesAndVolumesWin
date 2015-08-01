@@ -1,0 +1,27 @@
+EnumDevicesAndVolumes Processor time used: 2.14 seconds, DISKPART Processor time used: 6.235 seconds
+EnumDevicesAndVolumes Processor time used: 1.452 seconds, DISKPART Processor time used: 2.936 seconds
+EnumDevicesAndVolumes Processor time used: 2.530 seconds, DISKPART Processor time used: 2.953 seconds
+EnumDevicesAndVolumes Processor time used: 2.541 seconds, DISKPART Processor time used: 2.867 seconds
+EnumDevicesAndVolumes Processor time used: 1.448 seconds, DISKPART Processor time used: 2.905 seconds
+
+F:\Delme\CleanBCD>cscript WhoIsFaster.js
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+EnumDevicesAndVolumes Processor time used: 2.499 seconds, DISKPART Processor time used: 2.916 seconds
+EnumDevicesAndVolumes Processor time used: 1.468 seconds, DISKPART Processor time used: 2.778 seconds
+EnumDevicesAndVolumes Processor time used: 2.640 seconds, DISKPART Processor time used: 2.889 seconds
+EnumDevicesAndVolumes Processor time used: 2.671 seconds, DISKPART Processor time used: 2.937 seconds
+EnumDevicesAndVolumes Processor time used: 2.650 seconds, DISKPART Processor time used: 2.671 seconds
+
+F:\Delme\CleanBCD>cscript WhoIsFaster.js
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+EnumDevicesAndVolumes Processor time used: 2.608 seconds, DISKPART Processor time used: 2.952 seconds
+EnumDevicesAndVolumes Processor time used: 2.619 seconds, DISKPART Processor time used: 2.833 seconds
+EnumDevicesAndVolumes Processor time used: 2.640 seconds, DISKPART Processor time used: 2.827 seconds
+EnumDevicesAndVolumes Processor time used: 1.483 seconds, DISKPART Processor time used: 2.702 seconds
+EnumDevicesAndVolumes Processor time used: 1.452 seconds, DISKPART Processor time used: 2.760 seconds
+
+F:\Delme\CleanBCD>
