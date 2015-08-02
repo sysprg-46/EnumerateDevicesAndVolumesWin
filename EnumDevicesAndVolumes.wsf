@@ -2486,7 +2486,7 @@ function CollectionClass( StdRegInstance )// June 28 // July 11 UPDATE, no more 
             if ( PrevDCUniqueID != "" )
             {
                ChildN = DevicesCollection[ obj.ParentIndex ].NumberOfLV;
-               if ( obj.Type == "Partition" ) ++ChildN;
+               if ( obj.Type == "Partition" && ChildN == 0 ) ++ChildN;
             }
             PrevDCUniqueID = obj.DCUniqueID;                                                             // ClassLV
          }
