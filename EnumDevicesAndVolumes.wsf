@@ -1,7 +1,9 @@
-<job>
+<package>
+<job id="EnumDevicesAndVolumes">
 <script language="JScript">//<!-- GlobalCode LeadingTag -->
+'use strict';
 //---------------------------------------------------------------------
-// Â© Oleg Kulikov, sysprg@live.ru
+// © Oleg Kulikov, sysprg@live.ru
 //---------------------------------------------------------------------
 // Project: EnumDevicesAndVolumes
 // Version: 1.0
@@ -92,6 +94,7 @@ var CurrentVersionObject = {}; // June 26
 
 </script>                    <!-- GlobalCode         TraingTag  -->
 <script language="JScript">//<!-- StdRegWrapperClass LeadingTag -->
+'use strict';
 /////////////////////////////////////////////////////////////////////////////////////
 //                    StdRegWrapperClass( ServerName )                             //
 /////////////////////////////////////////////////////////////////////////////////////
@@ -116,7 +119,7 @@ var CurrentVersionObject = {}; // June 26
 // RegGetAllValues( root, regPath ) => { name: vName, type: vType, value: vValue } //
 //---------------------------------------------------------------------------------//
 // This class exports it's own methods:                                            //
-// RegDateToDate( dword )                                                          //
+// RegDateToDate( dword / qword )                                                  //
 // SetServer = function( name )                                                    //
 // SetWarnings = function( level )                                                 //
 // SetUseCallCounts( level )                                                       //
@@ -144,6 +147,7 @@ version 02 continued from 02.00 till 02.154 at June 18 2015
 "02.155 June 19 2015"   Output bufferization can be enabled by the caller, June 23
 "02.156 June 23 2015"   Method RegGetEnumValues implemented at July 27
 "02.157 Julye 27 2015"  parseInt( CurrentVersionObject.CurrentBuild ) implemented at July 28
+"02.158 July 28 2015"   RegDateToDate fixed at August 13   
 */
    this.OutBuffers = null; // June 23, implemented
 
@@ -156,7 +160,7 @@ version 02 continued from 02.00 till 02.154 at June 18 2015
       ServerName = "."; // local machine
    }
 
-   var Version = "02.158 July 28 2015";
+   var Version = "02.159 August 13 2015"; // RegDateToDate - WAD
 
    this.GetVersion = function()
    {
@@ -175,7 +179,8 @@ version 02 continued from 02.00 till 02.154 at June 18 2015
                   "RegGetBinaryValue": 0,
                   "RegGetStringValue": 0,
                   "RegGetMultiStringValue": 0,
-                  "RegGetExpandedStringValue": 0
+                  "RegGetExpandedStringValue": 0,
+                  "RegDateToDate": 0
                };
 
    var HKCR = 0x80000000;// HKEY_CLASSES_ROOT
@@ -743,64 +748,33 @@ version 02 continued from 02.00 till 02.154 at June 18 2015
       return res;
    }
    //
-   // this method converts registry REG_DWORD date to
+   // this method converts registry REG_QDWORD number which presents Date to
    // standard JS Date object and returns it.
+   //
+   // https://msdn.microsoft.com/en-us/library/aa393041(v=vs.85).aspx
+   // Unique value that indicates the time when an event is generated. This is a 64-bit 
+   // FILETIME value that represents the number of 100-nanosecond intervals after January 1, 1601. 
+   // The information is in the Coordinated Universal Time (UTC) format. This property is inherited 
+   // from __Event. To convert this value to other time formats, use the SWbemDateTime methods 
+   // SetFileTime and GetFileTime. For more information, see WMI Tasks: Dates and Times.
    //
    this.RegDateToDate = function( regDate )
    {
-      var MaxDWORD = 0x100000000, jsDate;
+      if ( UseCallCounts ) // if caller have requested
+      {
+         Usage[ "RegDateToDate" ]++;
+      }
+      var MaxDWORD = 0x100000000;
 
-      if ( regDate < MaxDWORD )
+      if ( regDate < MaxDWORD )// if RegDate is REG_DWORD
       {
-         jsDate = new Date( 1000 * regDate );
+         return new Date( 1000 * regDate );
       }
-      else
-      {
-         var tmp3 = 10 * (( regDate / 1000000 ).toFixed());
-         jsDate = new Date( tmp3 );
-//Out.StdOut.WriteLine( "Final: " + " " + jsDate.toString() + " input=" + regDate + " for conversion: " + tmp3 );
-/*
-------------------------------------------------------------------------------------------------
-var tmp3 = 1000*(( regDate / 1000000 ).toFixed());
-Final:  Fri Jun 10 03:55:02 UTC+0300 6112 input=130722771301508910 for conversion: 130722771302000
-Final:  Sat Mar 31 15:16:18 UTC+0300 6114 input=130779749777690889 for conversion: 130779749778000
-Final:  Sat Mar 31 15:16:46 UTC+0300 6114 input=130779749806453223 for conversion: 130779749806000
-Final:  Fri Jun 10 03:55:03 UTC+0300 6112 input=130722771302765282 for conversion: 130722771303000
-------------------------------------------------------------------------------------------------
-         var tmp1 = ( regDate % MaxDWORD );// seconds
-         var tmp2 = ( ( ( tmp1 % MaxDWORD ).toFixed() ) % 1000 );
-         var tmp3 = 1000 * ( 1000 * tmp2 + tmp1 );
-Final:  Sat Sep 15 22:36:16 UTC+0300 2103 input=130722771301508910 for conversion: 4219328176000
-Final:  Wed Mar 27 04:02:08 UTC+0300 2013 input=130779749777690889 for conversion: 1364346128000
-Final:  Wed Feb 26 18:27:28 UTC+0300 2014 input=130779749806453223 for conversion: 1393428448000
-Final:  Thu Oct  4 17:49:04 UTC+0300 2103 input=130722771302765282 for conversion: 4220952544000
-------------------------------------------------------------------------------------------------
-         var tmp1 = ( regDate % MaxDWORD );// seconds
-         var tmp2 = ( ( ( regDate % MaxDWORD ).toFixed() ) % 1000 );
-         var tmp3 = 1000 * ( 1000 * tmp2 + tmp1 );
-Final:  Sat Sep 15 22:36:16 UTC+0300 2103 input=130722771301508910 for conversion: 4219328176000
-Final:  Wed Mar 27 04:02:08 UTC+0300 2013 input=130779749777690889 for conversion: 1364346128000
-Final:  Wed Feb 26 18:27:28 UTC+0300 2014 input=130779749806453223 for conversion: 1393428448000
-Final:  Thu Oct  4 17:49:04 UTC+0300 2103 input=130722771302765282 for conversion: 4220952544000
-------------------------------------------------------------------------------------------------
-         var tmp1 = ( regDate % MaxDWORD );// seconds
-         var tmp2 = ( ( ( regDate / MaxDWORD ).toFixed() ) % 1000 );
-         var tmp3 = 1000 * ( 1000 * tmp2 + tmp1 );
-Final:  Sun Sep 16 23:52:56 UTC+0300 2103 input=130722771301508910 for conversion: 4219419176000
-Final:  Sun Mar 31 20:32:08 UTC+0300 2013 input=130779749777690889 for conversion: 1364751128000
-Final:  Thu Feb 27 18:04:08 UTC+0300 2014 input=130779749806453223 for conversion: 1393513448000
-Final:  Mon Oct  1 12:52:24 UTC+0300 2103 input=130722771302765282 for conversion: 4220675544000
-------------------------------------------------------------------------------------------------
-*/
-      }
-      return jsDate;
+      
+      var since1601 = 11644473600000; // till 01/01/1970
+      var MilliSeconds = Math.round( regDate / 10000 ) - since1601;
+      return new Date( MilliSeconds );
    }
-/*
-   this.RegDateToDateString = function( regDate )
-   {
-      return this.RegDateToDate( regDate ).toString();
-   }
-*/
 
    //-----------------------------------------------------------------------------
    // the only useful actions of the class constructor, tested at June 26, WAD
@@ -877,6 +851,7 @@ Final:  Mon Oct  1 12:52:24 UTC+0300 2103 input=130722771302765282 for conversio
 
 </script>                    <!-- StdRegWrapperClass TrailingTag -->
 <script language="JScript">//<!-- CollectionClass LeadingTag  -->
+'use strict';
 
 //
 // CollectionClass prototypes
@@ -2515,7 +2490,7 @@ function CollectionClass( StdRegInstance )// June 28 // July 11 UPDATE, no more 
 
          // July 27, very STRANGE decesion to sort CPC\Volume by VolumeGUIDS resulted
          // that the childs of the one parent are not immedeatly following each other
-         // as it always be sence at least Build 7601. This decesion looks like sorting
+         // as it always be since at least Build 7601. This decesion looks like sorting
          // childs nor by the the same parent and Offset but by the height.
          // Thus we HAD TO SORT LVGroup as a childs with SMALL offsets may follow childs            // ClassLV
          // with a BIG Offsets. NE BOGI GORSHKI OBJIGAYUT in MS !!!
@@ -2563,7 +2538,7 @@ function CollectionClass( StdRegInstance )// June 28 // July 11 UPDATE, no more 
             //  {1036c1c4-0000-0000-007e-000000000000}
             if ( obj.Style == "Mbr" )
             {
-               if (0)//( CurrentVersionObject.CurrentBuild > 7601 )// even under 10240 works for a 2-nd disk
+               if (0)//( CurrentVersionObject.CurrentBuild > 7601 )
                {
                   obj.SignOwner = false;
                   if ( obj.VolumeGUID.substr( 10, 9 ) == "0000-0000" ) // This case happens at Windows 8.1+
@@ -2593,8 +2568,9 @@ function CollectionClass( StdRegInstance )// June 28 // July 11 UPDATE, no more 
             ++this.Count;
          }//  End-of-J-loop
 
-      }// End-of-I-Loop                                                                                     // ClassLV
-
+      }// End-of-I-Loop   
+                                                                                        // ClassLV
+      // Step 4 starting tag ============================================================================== // ClassLV
       var HKLM = 0x80000002;// HKEY_LOCAL_MACHINE
 
       var tmp = regObj.RegGetAllValues( HKLM, "SYSTEM\\MountedDevices" ); // ***       // ClassLV
@@ -2625,7 +2601,10 @@ function CollectionClass( StdRegInstance )// June 28 // July 11 UPDATE, no more 
       {
          if ( tmp[ i ].name.charAt( 0 ) == "#" ) continue; // ignore junk entries        // ClassLV
          delete tmp[ i ].type;
-
+         // following Echo proved that there is no bug in the code,
+         // all the data from MountedDevices are read in the correct oreder.
+         // see exported MountedDevices10240.reg
+         //WScript.Echo( i.toString().right(2)+" "+tmp[i].name+" "+tmp[i].value.left(50) );
 		   if ( tmp[ i ].name.charAt( 1 ) == "?" ) // Volume
 		   {
 		      guids[ guids.length ] = tmp[ i ];
@@ -2986,6 +2965,7 @@ function CollectionClass( StdRegInstance )// June 28 // July 11 UPDATE, no more 
 } // End-of-CollectionClass                                                             // CollectionClassConstructor-Trailing-Tag
 </script>                    <!-- CollectionClass TrailingTag -->
 <script language="JScript">//<!-- TestCase-EnumDevicesAndVolumes LeadingTag -->
+'use strict';
 //===========================================================================
 // Test code for StdRegWrapperClass, EnumDevicesVolumesClass
 //===========================================================================
@@ -3119,15 +3099,16 @@ if ( IsCompetition )
       fh.WriteLine( "select disk " + i );
       fh.WriteLine( "detail disk " );
       fh.WriteLine( "list part" );
-      /*
+/* 
+      if ( DevicesCollection[ i ].Type != "HD" ) continue;
       for ( var j = 0; j < DevicesCollection[ i ].NumberOfSV; j++ )
       {
-         fh.WriteLine( "select part " + j );
+         fh.WriteLine( "select part " + ( j + 1 ) );
          fh.WriteLine( "detail part" );
       }
-      */
+*/ 
    }
-   fh.WriteLine( "list disk" );
+   fh.WriteLine( "list volume" );
    for ( var i = 0; i < LogicalVolumesCollection.Count; i++ )
    {
       fh.WriteLine( "select volume " + i );
@@ -3146,3 +3127,4 @@ WScript.Quit();
 </script>//<!-- TestCase-EnumDevicesAndVolumes TrailingTag -->
 </job>
 <!----End-of-File-EnumDevicesAndVolumes.wsf--------------------------------->
+</package>
