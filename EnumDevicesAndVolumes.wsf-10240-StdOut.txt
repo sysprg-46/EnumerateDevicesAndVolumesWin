@@ -1,0 +1,912 @@
+
+
+Build 10240, StdRegWrapperClass version 02.165 August 21 2015, EnumDevicesAndVolumesClass version 02.02 July 28, 2015
+
+
+EnumDevicesAndVolumes.wsf finished building collections at Mon Aug 24 20:16:56 UTC+0300 2015
+Processor time used: 5.685 seconds
+
+
+There are 9 objects in DevicesCollection
+
+
+PnPDeviceID        SCSI\CdRom&Ven_Msft&Prod_Virtual_DVD-ROM\2&1f4adffe&0&000003
+OrderIndex         0
+Capabilities       98
+ConfigFlags        0
+CompatibleIDs      SCSI\CdRom,SCSI\RAW
+ClassGUID          {4d36e965-e325-11ce-bfc1-08002be10318}
+Service            cdrom
+Mfg                (Standard CD-ROM drives)
+FriendlyName       Microsoft Virtual DVD-ROM
+DiskId             SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+DCUniqueID         SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+LVGroupStyle       
+NumberOfLV         1
+LVGroup            
+Type               DVD-ROM
+Subtype            Virtual
+Timestamp          Mon Aug 24 19:16:18 UTC+0300 2015
+SerialNumber       
+DeviceIndex        0
+
+
+PnPDeviceID        SCSI\CdRom&Ven_Msft&Prod_Virtual_DVD-ROM\2&1f4adffe&0&000004
+OrderIndex         1
+Capabilities       98
+ConfigFlags        0
+CompatibleIDs      SCSI\CdRom,SCSI\RAW
+ClassGUID          {4d36e965-e325-11ce-bfc1-08002be10318}
+Service            cdrom
+Mfg                (Standard CD-ROM drives)
+FriendlyName       Microsoft Virtual DVD-ROM
+DiskId             SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+DCUniqueID         SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+LVGroupStyle       
+NumberOfLV         1
+LVGroup            
+Type               DVD-ROM
+Subtype            Virtual
+Timestamp          Mon Aug 24 19:16:26 UTC+0300 2015
+SerialNumber       
+DeviceIndex        1
+
+
+PnPDeviceID        SCSI\Disk&Ven_&Prod_ST9320423AS\4&3516b3b5&0&000000
+OrderIndex         2
+Capabilities       96
+ConfigFlags        0
+CompatibleIDs      SCSI\Disk,SCSI\RAW
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+FriendlyName       ST9320423AS
+Service            disk
+Mfg                (Standard disk drives)
+DiskId             {714ce426-d2a2-11e4-824f-806e6f6e6963}
+DCUniqueID         714ce426
+LVGroupStyle       Mbr
+NumberOfLV         4
+LVGroup            0000000000007e00,0000000016260000,0000000f61cec000,0000002078900000
+Type               HD
+Subtype            Internal
+NumberOfSV         4
+SVGroup            0000000000007e00,0000000016260000,0000000f61cec000,0000002078900000
+Timestamp          Sun Jul 19 08:12:08 UTC+0300 2015
+SerialNumber       5VH4135F
+DeviceIndex        2
+ComponentInfo      600000000000000000000000ffffffff
+Identifier         e9b5a158-1036c1c4-A
+Signature          1036c1c4
+
+
+PnPDeviceID        SCSI\Disk&Ven_TOSHIBA&Prod_MK1646GSX\4&3516b3b5&0&010000
+OrderIndex         3
+Capabilities       102
+ConfigFlags        0
+CompatibleIDs      SCSI\Disk,SCSI\RAW
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+FriendlyName       TOSHIBA MK1646GSX
+Service            disk
+Mfg                (Standard disk drives)
+DiskId             {714ce427-d2a2-11e4-824f-806e6f6e6963}
+DCUniqueID         714ce427
+LVGroupStyle       Mbr
+NumberOfLV         2
+LVGroup            0000000000100000,0000001cb7e5a000
+Type               HD
+Subtype            Internal
+NumberOfSV         2
+SVGroup            0000000000100000,0000001cb7e5a000
+Timestamp          Sun Jul 19 08:12:08 UTC+0300 2015
+SerialNumber       Y7KET3PRT
+DeviceIndex        3
+ComponentInfo      600000000000000001000000ffffffff
+Identifier         8fef3a8f-eda732ef-A
+Signature          eda732ef
+
+
+PnPDeviceID        SD\DISK&Generic&SA08G&0.4\6&447d92&0&9c053461&0
+OrderIndex         4
+Capabilities       32
+CompatibleIDs      GenDisk
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+FriendlyName       Generic SA08G SD Card
+Service            disk
+Mfg                (Standard disk drives)
+ConfigFlags        0
+DiskId             {714ce424-d2a2-11e4-824f-806e6f6e6963}
+DCUniqueID         714ce424
+LVGroupStyle       Mbr
+NumberOfLV         2
+LVGroup            0000000000000000
+Type               Removable
+Subtype            SD
+NumberOfSV         2
+SVGroup            0000000000000000
+Timestamp          null
+SerialNumber       
+DeviceIndex        4
+
+
+PnPDeviceID        SCSI\Disk&Ven_Msft&Prod_Virtual_Disk\2&1f4adffe&0&000001
+OrderIndex         5
+Capabilities       98
+ConfigFlags        0
+CompatibleIDs      SCSI\Disk,SCSI\RAW
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+FriendlyName       Microsoft Virtual Disk
+Service            disk
+Mfg                (Standard disk drives)
+DiskId             {d7cf227d-2ea0-11e5-82ee-806e6f6e6963}
+DCUniqueID         d7cf227d
+LVGroupStyle       Gpt
+NumberOfLV         3
+LVGroup            0000000002010000,000000000e810000,0000000018e10000
+Type               HD
+Subtype            VHD
+NumberOfSV         4
+SVGroup            0000000000004400,0000000002010000,000000000e810000,0000000018e10000
+Timestamp          Mon Aug 24 19:15:31 UTC+0300 2015
+SerialNumber       
+DeviceIndex        5
+
+
+PnPDeviceID        SCSI\Disk&Ven_Msft&Prod_Virtual_Disk\2&1f4adffe&0&000002
+OrderIndex         6
+Capabilities       98
+ConfigFlags        0
+CompatibleIDs      SCSI\Disk,SCSI\RAW
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+Service            disk
+Mfg                (Standard disk drives)
+FriendlyName       Microsoft Virtual Disk
+DiskId             {ce957f4b-2ea7-11e5-82f1-00247ee0576f}
+DCUniqueID         ce957f4b
+LVGroupStyle       Gpt
+NumberOfLV         1
+LVGroup            0000000002010000
+Type               HD
+Subtype            VHD
+NumberOfSV         2
+SVGroup            0000000000004400,0000000002010000
+Timestamp          Mon Aug 24 19:15:35 UTC+0300 2015
+SerialNumber       
+DeviceIndex        6
+
+
+PnPDeviceID        USBSTOR\Disk&Ven_Hitachi&Prod_HTS723232L9A360&Rev_\Hitachi_HT100219FCC400NEJTBU5G&0
+OrderIndex         7
+Capabilities       16
+CompatibleIDs      USBSTOR\Disk,USBSTOR\RAW,GenDisk
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+FriendlyName       Hitachi HTS723232L9A360 USB Device
+Service            disk
+Mfg                (Standard disk drives)
+ConfigFlags        0
+DiskId             {05699b59-2ea4-11e5-82f0-00247ee0576f}
+DCUniqueID         05699b59
+LVGroupStyle       Mbr
+NumberOfLV         2
+LVGroup            0000000000007e00,000000093a400000
+Type               HD
+Subtype            USB
+NumberOfSV         2
+SVGroup            0000000000007e00,000000093a400000
+Timestamp          null
+SerialNumber       
+DeviceIndex        7
+
+
+PnPDeviceID        USBSTOR\Disk&Ven_Generic&Prod_USB_Flash_Disk&Rev_1100\08AD000000002788&0
+OrderIndex         8
+Capabilities       16
+CompatibleIDs      USBSTOR\Disk,USBSTOR\RAW,GenDisk
+ClassGUID          {4d36e967-e325-11ce-bfc1-08002be10318}
+FriendlyName       Generic USB Flash Disk USB Device
+Service            disk
+Mfg                (Standard disk drives)
+ConfigFlags        0
+DiskId             {78ddc4db-2e48-11e5-82eb-0c607688d174}
+DCUniqueID         78ddc4db
+LVGroupStyle       Mbr
+NumberOfLV         2
+LVGroup            0000000000000000
+Type               Removable
+Subtype            Flash
+NumberOfSV         2
+SVGroup            0000000000000000
+Timestamp          null
+SerialNumber       
+DeviceIndex        8
+
+
+
+
+There are 16 objects in StorageVolumesCollection
+
+
+ParentIndex        2
+DCUniqueID         714ce426
+Type               Partition
+Offset             0000000000007e00
+SVUniqueID         714ce4260000000000007e00
+ChildNumber        1
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         0
+
+
+ParentIndex        2
+DCUniqueID         714ce426
+Type               Partition
+Offset             0000000016260000
+SVUniqueID         714ce4260000000016260000
+ChildNumber        2
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         1
+
+
+ParentIndex        2
+DCUniqueID         714ce426
+Type               Partition
+Offset             0000000f61cec000
+SVUniqueID         714ce4260000000f61cec000
+ChildNumber        3
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         2
+
+
+ParentIndex        2
+DCUniqueID         714ce426
+Type               Partition
+Offset             0000002078900000
+SVUniqueID         714ce4260000002078900000
+ChildNumber        4
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         3
+
+
+ParentIndex        3
+DCUniqueID         714ce427
+Type               Partition
+Offset             0000000000100000
+SVUniqueID         714ce4270000000000100000
+ChildNumber        1
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         4
+
+
+ParentIndex        3
+DCUniqueID         714ce427
+Type               Partition
+Offset             0000001cb7e5a000
+SVUniqueID         714ce4270000001cb7e5a000
+ChildNumber        2
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         5
+
+
+ParentIndex        4
+DCUniqueID         714ce424
+Offset             0000000000000000
+Type               Removable
+SVUniqueID         714ce4240000000000000000
+ChildNumber        1
+Capabilities       176
+ContainerID        {fbfcf5a4-2e44-11e5-9bc1-806e6f6e6963}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         6
+
+
+ParentIndex        5
+DCUniqueID         d7cf227d
+Type               Partition
+Offset             0000000000004400
+SVUniqueID         d7cf227d0000000000004400
+ChildNumber        1
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         7
+
+
+ParentIndex        5
+DCUniqueID         d7cf227d
+Type               Partition
+Offset             0000000002010000
+SVUniqueID         d7cf227d0000000002010000
+ChildNumber        2
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         8
+
+
+ParentIndex        5
+DCUniqueID         d7cf227d
+Type               Partition
+Offset             000000000e810000
+SVUniqueID         d7cf227d000000000e810000
+ChildNumber        3
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         9
+
+
+ParentIndex        5
+DCUniqueID         d7cf227d
+Type               Partition
+Offset             0000000018e10000
+SVUniqueID         d7cf227d0000000018e10000
+ChildNumber        4
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         10
+
+
+ParentIndex        6
+DCUniqueID         ce957f4b
+Type               Partition
+Offset             0000000000004400
+SVUniqueID         ce957f4b0000000000004400
+ChildNumber        1
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         11
+
+
+ParentIndex        6
+DCUniqueID         ce957f4b
+Type               Partition
+Offset             0000000002010000
+SVUniqueID         ce957f4b0000000002010000
+ChildNumber        2
+Capabilities       176
+ContainerID        {00000000-0000-0000-ffff-ffffffffffff}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         12
+
+
+ParentIndex        7
+DCUniqueID         05699b59
+Type               Partition
+Offset             0000000000007e00
+SVUniqueID         05699b590000000000007e00
+ChildNumber        1
+Capabilities       176
+ContainerID        {cf766c42-12b1-5223-8b05-1d835b10f4aa}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         13
+
+
+ParentIndex        7
+DCUniqueID         05699b59
+Type               Partition
+Offset             000000093a400000
+SVUniqueID         05699b59000000093a400000
+ChildNumber        2
+Capabilities       176
+ContainerID        {cf766c42-12b1-5223-8b05-1d835b10f4aa}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         14
+
+
+ParentIndex        8
+DCUniqueID         78ddc4db
+Offset             0000000000000000
+Type               Removable
+SVUniqueID         78ddc4db0000000000000000
+ChildNumber        1
+Capabilities       176
+ContainerID        {b2be0907-5f07-5cbe-9166-6dd652af5523}
+ClassGUID          {71a27cdd-812a-11d0-bec7-08002be2092f}
+Service            volsnap
+OrderIndex         15
+
+
+
+
+There are 16 objects in LogicalVolumesCollection
+
+
+Type               DVD-ROM
+DevID              SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+Subtype            Virtual
+ParentIndex        0
+DCUniqueID         SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+VolumeGUID         {83983fef-129f-11e5-82c2-0c607688d174}
+Label              Ptd
+Fs                 CDFS
+VolumeSN           21E07066
+Boot               false
+System             false
+UserName           syspr_000
+Style              
+Offset             
+LVUniqueID         SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+ChildNumber        1
+OrderIndex         0
+Letter             D
+
+
+Type               DVD-ROM
+DevID              SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+Subtype            Virtual
+ParentIndex        1
+DCUniqueID         SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+VolumeGUID         {6e20ebe5-22dc-11e5-82c5-0c607688d174}
+Label              J_CCSA_X64FRE_EN-US_DV5
+Fs                 UDF
+VolumeSN           DE4864B7
+Boot               false
+System             false
+UserName           syspr_000
+Style              
+Offset             
+LVUniqueID         SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+ChildNumber        1
+OrderIndex         1
+Letter             G
+
+
+DevID              714ce426
+Offset             0000000000007e00
+Type               Partition
+ParentIndex        2
+DCUniqueID         714ce426
+VolumeGUID         {2c654a1d-e045-11e4-826d-806e6f6e6963}
+Label              System Reserved
+Fs                 NTFS
+VolumeSN           AC12F0AE
+Boot               false
+System             true
+UserName           syspr_000
+Style              Mbr
+Subtype            Internal
+LVUniqueID         714ce4260000000000007e00
+ChildNumber        1
+OrderIndex         2
+Letter              
+
+
+DevID              714ce426
+Offset             0000000f61cec000
+Type               Partition
+ParentIndex        2
+DCUniqueID         714ce426
+VolumeGUID         {61a86492-2d6c-11e5-82dc-0c607688d174}
+Label              Windows 10 TH1 10240
+Fs                 NTFS
+VolumeSN           0EFF14CD
+Boot               true
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            Internal
+LVUniqueID         714ce4260000000f61cec000
+ChildNumber        2
+OrderIndex         3
+Letter             C
+
+
+DevID              714ce426
+Offset             0000002078900000
+Type               Partition
+ParentIndex        2
+DCUniqueID         714ce426
+VolumeGUID         {714ce432-d2a2-11e4-824f-806e6f6e6963}
+Label              LenovoReco
+Fs                 NTFS
+VolumeSN           420B9826
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            Internal
+LVUniqueID         714ce4260000002078900000
+ChildNumber        3
+OrderIndex         4
+Letter             E
+
+
+DevID              714ce426
+Offset             0000000016260000
+Type               Partition
+ParentIndex        2
+DCUniqueID         714ce426
+VolumeGUID         {f0fd3322-2d89-11e5-82e0-806e6f6e6963}
+Label              Windows8.1-21-11-2014
+Fs                 NTFS
+VolumeSN           0EFF14CD
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            Internal
+LVUniqueID         714ce4260000000016260000
+ChildNumber        4
+OrderIndex         5
+Letter             B
+
+
+DevID              714ce427
+Offset             0000000000100000
+Type               Partition
+ParentIndex        3
+DCUniqueID         714ce427
+VolumeGUID         {714ce433-d2a2-11e4-824f-806e6f6e6963}
+Label              TOSH-MK1646GSX
+Fs                 NTFS
+VolumeSN           D6605DBF
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            Internal
+LVUniqueID         714ce4270000000000100000
+ChildNumber        1
+OrderIndex         6
+Letter             F
+
+
+DevID              714ce427
+Offset             0000001cb7e5a000
+Type               Partition
+ParentIndex        3
+DCUniqueID         714ce427
+VolumeGUID         {ffbc9827-e2c8-11e4-827f-0c607688d174}
+Label              Windows7Enterprise
+Fs                 NTFS
+VolumeSN           103A297D
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            Internal
+LVUniqueID         714ce4270000001cb7e5a000
+ChildNumber        2
+OrderIndex         7
+Letter             S
+
+
+Type               Removable
+Subtype            SD
+DevID              SD#DISK&Generic&SA08G&0.4#6&447d92&0&9c053461&0
+ParentIndex        4
+DCUniqueID         714ce424
+VolumeGUID         {b1dc4925-2dd4-11e5-b2ff-806e6f6e6963}
+Label              
+Fs                 
+VolumeSN           00000000
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Offset             0000000000000000
+LVUniqueID         714ce4240000000000000000
+ChildNumber        2
+OrderIndex         8
+Letter             A
+
+
+DevID              d7cf227d
+Offset             0000000002010000
+Type               Partition
+ParentIndex        5
+DCUniqueID         d7cf227d
+VolumeGUID         {3c0003d5-d08a-45da-8165-7af3134976c4}
+Label              VhdP2Of4
+Fs                 NTFS
+VolumeSN           32808B94
+Boot               false
+System             false
+UserName           syspr_000
+Style              Gpt
+Subtype            VHD
+LVUniqueID         d7cf227d0000000002010000
+ChildNumber        1
+OrderIndex         9
+
+
+DevID              d7cf227d
+Offset             000000000e810000
+Type               Partition
+ParentIndex        5
+DCUniqueID         d7cf227d
+VolumeGUID         {a1aeb03a-67c4-4feb-b392-a1a746d349a7}
+Label              VhdP3Of4
+Fs                 NTFS
+VolumeSN           B4B7028E
+Boot               false
+System             false
+UserName           syspr_000
+Style              Gpt
+Subtype            VHD
+LVUniqueID         d7cf227d000000000e810000
+ChildNumber        2
+OrderIndex         10
+Letter             I
+
+
+DevID              d7cf227d
+Offset             0000000018e10000
+Type               Partition
+ParentIndex        5
+DCUniqueID         d7cf227d
+VolumeGUID         {d62e2174-f7d9-4c4d-9664-dc1231b08db2}
+Label              VhdP4Of4
+Fs                 NTFS
+VolumeSN           FE6184CF
+Boot               false
+System             false
+UserName           syspr_000
+Style              Gpt
+Subtype            VHD
+LVUniqueID         d7cf227d0000000018e10000
+ChildNumber        3
+OrderIndex         11
+
+
+DevID              ce957f4b
+Offset             0000000002010000
+Type               Partition
+ParentIndex        6
+DCUniqueID         ce957f4b
+VolumeGUID         {b903be82-0416-4ef3-b7d9-349a15940a2e}
+Label              VhdP2Of2
+Fs                 NTFS
+VolumeSN           0C65F309
+Boot               false
+System             false
+UserName           syspr_000
+Style              Gpt
+Subtype            VHD
+LVUniqueID         ce957f4b0000000002010000
+ChildNumber        1
+OrderIndex         12
+
+
+DevID              05699b59
+Offset             0000000000007e00
+Type               Partition
+ParentIndex        7
+DCUniqueID         05699b59
+VolumeGUID         {b20a32f4-d2b8-11e4-8256-0c607688d174}
+Label              Windows8.1.3-WTG
+Fs                 NTFS
+VolumeSN           0EFF14CD
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            USB
+LVUniqueID         05699b590000000000007e00
+ChildNumber        1
+OrderIndex         13
+Letter             H
+
+
+DevID              05699b59
+Offset             000000093a400000
+Type               Partition
+ParentIndex        7
+DCUniqueID         05699b59
+VolumeGUID         {b20a32f5-d2b8-11e4-8256-0c607688d174}
+Label              WTG-8-1Part2
+Fs                 NTFS
+VolumeSN           E6BAD901
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Subtype            USB
+LVUniqueID         05699b59000000093a400000
+ChildNumber        1
+OrderIndex         14
+Letter             J
+
+
+Type               Removable
+Subtype            Flash
+DevID              USBSTOR#Disk&Ven_Generic&Prod_USB_Flash_Disk&Rev_1100#08AD000000002788&0
+ParentIndex        8
+DCUniqueID         78ddc4db
+VolumeGUID         {83983fcd-129f-11e5-82c2-0c607688d174}
+Label              WORK
+Fs                 FAT32
+VolumeSN           B4763353
+Boot               false
+System             false
+UserName           syspr_000
+Style              Mbr
+Offset             0000000000000000
+LVUniqueID         78ddc4db0000000000000000
+ChildNumber        2
+OrderIndex         15
+Letter             K
+
+
+Following MountPoints and MountNames were matched
+
+
+  assigned Mbr 2c654a1d0000000000007e00 Signature c4c13610, new Direct Access key: c4c136100000000000007e00
+  assigned Mbr 61a864920000000f61cec000 Signature c4c13610, new Direct Access key: c4c136100000000f61cec000
+  assigned Mbr 714ce4320000002078900000 Signature c4c13610, new Direct Access key: c4c136100000002078900000
+  assigned Mbr 714ce4330000000000100000 Signature ef32a7ed, new Direct Access key: ef32a7ed0000000000100000
+  assigned Mbr b20a32f40000000000007e00 Signature b459aba6, new Direct Access key: b459aba60000000000007e00
+  assigned Mbr b20a32f5000000093a400000 Signature b459aba6, new Direct Access key: b459aba6000000093a400000
+  assigned Mbr f0fd33220000000016260000 Signature c4c13610, new Direct Access key: c4c136100000000016260000
+  assigned Mbr ffbc98270000001cb7e5a000 Signature ef32a7ed, new Direct Access key: ef32a7ed0000001cb7e5a000
+
+
+A assigned at index  8 to Removable     SD#DISK&Generic&SA08G&0.4#6&447d92&0&9c053461&0
+B assigned at index  5 to Mbr Partition c4c136100000000016260000 Signature c4c13610
+C assigned at index  3 to Mbr Partition c4c136100000000f61cec000 Signature c4c13610
+E assigned at index  4 to Mbr Partition c4c136100000002078900000 Signature c4c13610
+F assigned at index  6 to Mbr Partition ef32a7ed0000000000100000 Signature ef32a7ed
+G assigned at index  1 to DVD-ROM       SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+H assigned at index 13 to Mbr Partition b459aba60000000000007e00 Signature b459aba6
+I assigned at index 10 to Gpt Partition a1aeb03a
+J assigned at index 14 to Mbr Partition b459aba6000000093a400000 Signature b459aba6
+K assigned at index 15 to Removable     USBSTOR#Disk&Ven_Generic&Prod_USB_Flash_Disk&Rev_1100#08AD000000002788&0
+S assigned at index  7 to Mbr Partition ef32a7ed0000001cb7e5a000 Signature ef32a7ed
+D assigned at index  0 to DVD-ROM       SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+
+
+VN  Ltr  Label        S/N       FS     Type       Subtype   Gpt  VolGUID.F1  DevGUID.F1  Offset            
+--  ---  -----------  --------  -----  ---------  --------  ---  ----------  ----------  ----------------  
+ 0   D   Ptd          21E07066  CDFS   DVD-ROM    Virtual        83983fef                                 
+ 1   G   J_CCSA_X64F  DE4864B7  UDF    DVD-ROM    Virtual        6e20ebe5                                 
+ 2       System Rese  AC12F0AE  NTFS   Partition  Internal       2c654a1d    714ce426    0000000000007e00 
+ 3   C   Windows 10   0EFF14CD  NTFS   Partition  Internal       61a86492    714ce426    0000000f61cec000 
+ 4   E   LenovoReco   420B9826  NTFS   Partition  Internal       714ce432    714ce426    0000002078900000 
+ 5   B   Windows8.1-  0EFF14CD  NTFS   Partition  Internal       f0fd3322    714ce426    0000000016260000 
+ 6   F   TOSH-MK1646  D6605DBF  NTFS   Partition  Internal       714ce433    714ce427    0000000000100000 
+ 7   S   Windows7Ent  103A297D  NTFS   Partition  Internal       ffbc9827    714ce427    0000001cb7e5a000 
+ 8   A                00000000         Removable  SD             b1dc4925    714ce424    0000000000000000 
+ 9       VhdP2Of4     32808B94  NTFS   Partition  VHD        *   3c0003d5    d7cf227d    0000000002010000 
+10   I   VhdP3Of4     B4B7028E  NTFS   Partition  VHD        *   a1aeb03a    d7cf227d    000000000e810000 
+11       VhdP4Of4     FE6184CF  NTFS   Partition  VHD        *   d62e2174    d7cf227d    0000000018e10000 
+12       VhdP2Of2     0C65F309  NTFS   Partition  VHD        *   b903be82    ce957f4b    0000000002010000 
+13   H   Windows8.1.  0EFF14CD  NTFS   Partition  USB            b20a32f4    05699b59    0000000000007e00 
+14   J   WTG-8-1Part  E6BAD901  NTFS   Partition  USB            b20a32f5    05699b59    000000093a400000 
+15   K   WORK         B4763353  FAT32  Removable  Flash          83983fcd    78ddc4db    0000000000000000 
+
+
+
+
+
+Direct Access Keys in LogicalVolumesCollection
+16 Count
+0 SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000003
+1 SCSI#CdRom&Ven_Msft&Prod_Virtual_DVD-ROM#2&1f4adffe&0&000004
+2 2c654a1d0000000000007e00
+3 61a864920000000f61cec000
+4 714ce4320000002078900000
+5 f0fd33220000000016260000
+6 714ce4330000000000100000
+7 ffbc98270000001cb7e5a000
+8 SD#DISK&Generic&SA08G&0.4#6&447d92&0&9c053461&0
+9 3c0003d5
+10 a1aeb03a
+11 d62e2174
+12 b903be82
+13 b20a32f40000000000007e00
+14 b20a32f5000000093a400000
+15 USBSTOR#Disk&Ven_Generic&Prod_USB_Flash_Disk&Rev_1100#08AD000000002788&0
+2 c4c136100000000000007e00
+3 c4c136100000000f61cec000
+4 c4c136100000002078900000
+6 ef32a7ed0000000000100000
+13 b459aba60000000000007e00
+14 b459aba6000000093a400000
+5 c4c136100000000016260000
+7 ef32a7ed0000001cb7e5a000
+
+
+
+
+--- All-Collections-Objects-Resemblence-Demo ---
+
+
+07 b2be0907                                 ContainerID-f1 Removable SV Mbr
+1d 2c654a1d                                 VolumeGUID-f1  Partition LV Mbr
+22 f0fd3322                                 VolumeGUID-f1  Partition LV Mbr
+24 714ce424                 DCUnique      4 OrderIndex     Removable DC Mbr
+24 714ce4240000000000000000 LVUnique      8 OrderIndex     Removable LV
+24 714ce4240000000000000000 SVUnique      6 OrderIndex     Removable SV
+25 b1dc4925                                 VolumeGUID-f1  Removable LV Mbr
+26 714ce426                 DCUnique      2 OrderIndex     HD        DC Mbr
+26 714ce4260000000000007e00 LVUnique      2 OrderIndex     Partition LV
+26 714ce4260000000000007e00 SVUnique      0 OrderIndex     Partition SV
+26 714ce4260000000016260000 LVUnique      5 OrderIndex     Partition LV
+26 714ce4260000000016260000 SVUnique      1 OrderIndex     Partition SV
+26 714ce4260000000f61cec000 LVUnique      3 OrderIndex     Partition LV
+26 714ce4260000000f61cec000 SVUnique      2 OrderIndex     Partition SV
+26 714ce4260000002078900000 LVUnique      4 OrderIndex     Partition LV
+26 714ce4260000002078900000 SVUnique      3 OrderIndex     Partition SV
+27 714ce427                 DCUnique      3 OrderIndex     HD        DC Mbr
+27 714ce4270000000000100000 LVUnique      6 OrderIndex     Partition LV
+27 714ce4270000000000100000 SVUnique      4 OrderIndex     Partition SV
+27 714ce4270000001cb7e5a000 LVUnique      7 OrderIndex     Partition LV
+27 714ce4270000001cb7e5a000 SVUnique      5 OrderIndex     Partition SV
+27 ffbc9827                                 VolumeGUID-f1  Partition LV Mbr
+32 714ce432                                 VolumeGUID-f1  Partition LV Mbr
+33 714ce433                                 VolumeGUID-f1  Partition LV Mbr
+3a a1aeb03a                                 VolumeGUID-f1  Partition LV Gpt
+42 cf766c42                                 ContainerID-f1 Partition SV Mbr
+42 cf766c42                                 ContainerID-f1 Partition SV Mbr
+4b ce957f4b                 DCUnique      6 OrderIndex     HD        DC Gpt
+4b ce957f4b0000000000004400 SVUnique     11 OrderIndex     Partition SV
+4b ce957f4b0000000002010000 LVUnique     12 OrderIndex     Partition LV
+4b ce957f4b0000000002010000 SVUnique     12 OrderIndex     Partition SV
+59 05699b59                 DCUnique      7 OrderIndex     HD        DC Mbr
+59 05699b590000000000007e00 LVUnique     13 OrderIndex     Partition LV
+59 05699b590000000000007e00 SVUnique     13 OrderIndex     Partition SV
+59 05699b59000000093a400000 LVUnique     14 OrderIndex     Partition LV
+59 05699b59000000093a400000 SVUnique     14 OrderIndex     Partition SV
+74 d62e2174                                 VolumeGUID-f1  Partition LV Gpt
+7d d7cf227d                 DCUnique      5 OrderIndex     HD        DC Gpt
+7d d7cf227d0000000000004400 SVUnique      7 OrderIndex     Partition SV
+7d d7cf227d0000000002010000 LVUnique      9 OrderIndex     Partition LV
+7d d7cf227d0000000002010000 SVUnique      8 OrderIndex     Partition SV
+7d d7cf227d000000000e810000 LVUnique     10 OrderIndex     Partition LV
+7d d7cf227d000000000e810000 SVUnique      9 OrderIndex     Partition SV
+7d d7cf227d0000000018e10000 LVUnique     11 OrderIndex     Partition LV
+7d d7cf227d0000000018e10000 SVUnique     10 OrderIndex     Partition SV
+82 b903be82                                 VolumeGUID-f1  Partition LV Gpt
+92 61a86492                                 VolumeGUID-f1  Partition LV Mbr
+a4 fbfcf5a4                                 ContainerID-f1 Removable SV Mbr
+cd 83983fcd                                 VolumeGUID-f1  Removable LV Mbr
+d5 3c0003d5                                 VolumeGUID-f1  Partition LV Gpt
+dR SCSI#CdRom&Ven_Msft&Prod DCUnique      0 OrderIndex     DVD-ROM   DC 
+dR SCSI#CdRom&Ven_Msft&Prod DCUnique      1 OrderIndex     DVD-ROM   DC 
+dR SCSI#CdRom&Ven_Msft&Prod LVUnique      0 OrderIndex     DVD-ROM   LV
+dR SCSI#CdRom&Ven_Msft&Prod LVUnique      1 OrderIndex     DVD-ROM   LV
+db 78ddc4db                 DCUnique      8 OrderIndex     Removable DC Mbr
+db 78ddc4db0000000000000000 LVUnique     15 OrderIndex     Removable LV
+db 78ddc4db0000000000000000 SVUnique     15 OrderIndex     Removable SV
+e5 6e20ebe5                                 VolumeGUID-f1  DVD-ROM   LV 
+ef 83983fef                                 VolumeGUID-f1  DVD-ROM   LV 
+f4 b20a32f4                                 VolumeGUID-f1  Partition LV Mbr
+f5 b20a32f5                                 VolumeGUID-f1  Partition LV Mbr
+
+
+StdRegWrapperClass method RegDateToDate            was used   6 times
+StdRegWrapperClass method RegGetValue              was used 346 times
+StdRegWrapperClass method RegGetAllValues          was used  31 times
+StdRegWrapperClass method EnumValues               was used  31 times
+StdRegWrapperClass method GetStringValue           was used 205 times
+StdRegWrapperClass method GetDWORDValue            was used  60 times
+StdRegWrapperClass method GetMultiStringValue      was used  34 times
+StdRegWrapperClass method GetQWORDValue            was used   9 times
+StdRegWrapperClass method EnumKey                  was used  13 times
+StdRegWrapperClass method GetBinaryValue           was used  75 times
